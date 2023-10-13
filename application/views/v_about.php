@@ -15,7 +15,7 @@
     <ul type="none">
         <li>Cirebon</li>
     </ul>
-    <h4>Olah Raga Favorit</h4>
+    <h4>Olah Raga Favorit </h4>
     <ul type="square">
         <li>Bulutangkis</li>
         <li>Catur</li>
