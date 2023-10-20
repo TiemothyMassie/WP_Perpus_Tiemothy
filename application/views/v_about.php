@@ -2,9 +2,14 @@
     <h1>
         <center><?php echo $judul ?></center>
     </h1>
+    <center>
+        <img src="<?php echo base_url()
+                    ?>assets/image/moo.jpg" width="250" height="250">
+    </center>
 
     <b>
         <hr>
+
         <h4>Nama</h4>
         <ul type="disc">
             <li>Tiemothy Henry Cristiano Massie</li>
@@ -24,8 +29,4 @@
             <li>Bulutangkis</li>
             <li>Basket</li>
         </ul>
-        <center>
-            <img src="<?php echo base_url()
-                        ?>assets/image/moo.jpg" width="250" height="250">
-        </center>
 </section>
