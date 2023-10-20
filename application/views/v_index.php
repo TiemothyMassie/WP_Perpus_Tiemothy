@@ -1,5 +1,9 @@
 <section>
     <h1><?php echo $judul ?></h1>
+    <center>
+        <img src="<?php echo base_url()
+                    ?>assets/image/ci.jpg" width="300" height="250">
+    </center>
     <p align='justify'>Pada pengertian codeigniter di atas
         tadi di jelaskan bahwa codeigniter menggunakan metode MVC. Apa itu
         MVC? Kita juga harus mengetahui apa itu MVC sebelum masuk dan lebih
@@ -22,12 +26,14 @@
         <p align='justify'>Sebagai catatan, Semua model harus disimpan di
             dalam folder application\models</p>
         <li>View</li>
+
         <p align='justify'>View merupakan bagian yang menangani halaman user
             interface atau halaman yang muncul pada user(pada browser). Tampilan
             dari user interface di kumpulkan pada view untuk memisahkannya
             dengan controller dan model sehingga memudahkan web designer dalam
             melakukan pengembangan tampilan halaman website.</p>
         <li>Controller</li>
+
         <p align='justify'>Controller merupakan kumpulan intruksi aksi yang
             menghubungkan model dan view, jadi user tidak akan berhubungan
             dengan model secara langsung, intinya data yang tersimpan di

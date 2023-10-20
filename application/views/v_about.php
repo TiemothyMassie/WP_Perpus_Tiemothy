@@ -1,23 +1,26 @@
 <section>
     <h1><?php echo $judul ?></h1>
+    <center>
+        <img src="<?php echo base_url()
+                    ?>assets/image/moo.jpg" width="250" height="250">
+    </center>
     <h4>Nama</h4>
     <ul type="disc">
-        <li>Nama Depan : Imam</li>
-        <li>Nama Belakang : Nawawi</li>
+        <li>Tiemothy Henry Cristiano Massie</li>
     </ul>
-    <br>
     <h4>Alamat</h4>
-    <ul type="none">
-        <li> Jalan Ciledug Raya No. 168 Pesanggrahan</li>
+    <ul type="disc">
+        <li> Vila Gading Harapan 3 Blok B14/39 RT15/10 Desa Kedung Jaya, Babelan, Kabupaten Bekasi
+        </li>
     </ul>
 
-    <h4>Tempat Lahir</h4>
-    <ul type="none">
-        <li>Cirebon</li>
+    <h4>Tempat, Tanggal Lahir :</h4>
+    <ul type="disc">
+        <li>Bekasi, 24 Maret 2005</li>
     </ul>
-    <h4>Olah Raga Favorit </h4>
+    <h4>Olahraga Favorit : </h4>
     <ul type="square">
         <li>Bulutangkis</li>
-        <li>Catur</li>
+        <li>Basket</li>
     </ul>
 </section>
