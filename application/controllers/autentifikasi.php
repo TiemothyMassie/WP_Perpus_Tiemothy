@@ -30,7 +30,7 @@ class Autentifikasi extends CI_Controller
             'Nama Lengkap',
             'required',
             [
-                'required' => 'Nama Belum diis!!'
+                'required' => 'Nama Belum diisi!!'
             ]
         );
 
@@ -80,7 +80,7 @@ class Autentifikasi extends CI_Controller
                 'image' => 'default.jpg',
                 'password' => password_hash($this->input->post('password1'), PASSWORD_DEFAULT),
                 'role_id' => 2,
-                'is_active' => 0,
+                'is_active' => 1,
                 'tanggal_input' => time()
             ];
             $this->ModelUser->simpanData($data); //menggunakan model

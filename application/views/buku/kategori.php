@@ -1,14 +1,14 @@
 <!-- Begin Page Content -->
-<div class="container-fluid"> <?= $this->session->flashdata('pesan'); ?> 
+<div class="container-fluid"> <?= $this->session->flashdata('pesan'); ?>
     <div class="row">
-        <div class="col-lg-3"> 
-            <?php if (validation_errors()) { ?> 
-            <div class="alert alert-danger" role="alert"> 
-                <?= validation_errors(); ?> </div> <?php } ?> 
-                <?= $this->session->flashdata('pesan'); ?> 
-                <a href="" class="btn btn-primary mb-3" data-toggle="modal" data-target="#kategoriBaruModal">
-                    <i class="fas fa-fw fa-file-alt"></i> Tambah Kategori
-                </a>
+        <div class="col-lg-3">
+            <?php if (validation_errors()) { ?>
+                <div class="alert alert-danger" role="alert">
+                    <?= validation_errors(); ?> </div> <?php } ?>
+            <?= $this->session->flashdata('pesan'); ?>
+            <a href="" class="btn btn-primary mb-3" data-toggle="modal" data-target="#kategoriBaruModal">
+                <i class="fas fa-fw fa-file-alt"></i> Tambah Kategori
+            </a>
             <table class="table table-hover">
                 <thead>
                     <tr>
@@ -22,15 +22,13 @@
                         <tr>
                             <th scope="row"><?= $a++; ?></th>
                             <td><?= $k['kategori']; ?></td>
-                            <td> 
+                            <td>
                                 <a href="<?= base_url('buku/ubahKategori/') . $k['id_kategori']; ?>" class="badge badge-info">
                                     <i class="fas fa-edit"></i> Ubah
-                                </a> 
-                                <a href="<?= base_url('buku/hapusKategori/') . $k['id_kategori']; ?>" 
-                                    onclick="return confirm('Kamu yakin akan menghapus 
-                                    <?= $judul . ' ' . $k['kategori']; ?> ?');" class="badge badge-danger">
+                                </a>
+                                <a href="<?= base_url('buku/hapusKategori/') . $k['id_kategori']; ?>" onclick="return confirm('Kamu yakin akan menghapus <?= $judul . ' ' . $k['kategori']; ?> ?');" class="badge badge-danger">
                                     <i class="fas fa-trash"></i> Hapus
-                                </a> 
+                                </a>
                             </td>
                         </tr>
                     <?php } ?>
