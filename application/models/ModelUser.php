@@ -14,6 +14,14 @@ class ModelUser extends CI_Model
     {
         return $this->db->get_where('user', $where);
     }
+    public function updateAnggota($data = null, $where = null)
+    {
+        $this->db->update('user', $data, $where);
+    }
+    public function hapusUser($where = null)
+    {
+        $this->db->delete('User', $where);
+    }
     public function cekUserAccess($where = null)
     {
         $this->db->select('*');
@@ -21,7 +29,6 @@ class ModelUser extends CI_Model
         $this->db->where($where);
         return $this->db->get();
     }
-
     public function getUserLimit()
     {
         $this->db->select('*');
