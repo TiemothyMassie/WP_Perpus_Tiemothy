@@ -121,7 +121,7 @@ class User extends CI_Controller
         //konfigurasi sebelum gambar diupload
         $config['upload_path'] = './assets/img/profile/';
         $config['allowed_types'] = 'jpg|png|jpeg';
-        $config['max_size'] = '3000';
+        $config['max_size'] = '5000';
         $config['max_width'] = '5024';
         $config['max_height'] = '5000';
         $config['file_name'] = 'pro' . time();
